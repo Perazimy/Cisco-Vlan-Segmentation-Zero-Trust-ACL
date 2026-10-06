@@ -187,6 +187,7 @@ VLAN Name                             Status    Ports
 ```
 
 ![Switch VLAN Brief](Screenshot/02_Switch_VLAN_Brief.png)
+
 *Figure 2: Cisco Catalyst 2960 VLAN database confirming active status of VLANs 10, 20, 30, and 40 mapped to access ports Fa0/1 through Fa0/4.*
 
 ---
@@ -205,6 +206,7 @@ GigabitEthernet0/0.40  10.0.40.1       YES manual up                    up
 ```
 
 ![Router Subinterfaces](Screenshot/03_Router_Subinterfaces.png)
+
 *Figure 3: Operational status of subinterfaces Gig0/0.10, Gig0/0.20, Gig0/0.30, and Gig0/0.40 showing Status: up and Protocol: up.*
 
 ---
@@ -213,6 +215,7 @@ GigabitEthernet0/0.40  10.0.40.1       YES manual up                    up
 Verified from `Employee-PC` (`10.0.20.10`) connecting to `Corp-Server` (`10.0.30.10`):
 
 ![Employee Web Access](Screenshot/04_Employee_Web_Success.png)
+
 *Figure 4: Simulated web browser on Employee-PC successfully loading HTTP web content from Corp-Server (10.0.30.10) on port 80.*
 
 ---
@@ -235,6 +238,7 @@ Ping statistics for 10.0.30.10:
 ```
 
 ![Employee Ping Denied](Screenshot/05_Employee_Ping_Denied.png)
+
 *Figure 5: Command prompt on Employee-PC verifying that ICMP Echo Requests (ping) to 10.0.30.10 are explicitly dropped by rule 60 of CORP_USERS_SECURITY_ACL.*
 
 ---
@@ -257,6 +261,7 @@ Ping statistics for 10.0.30.10:
 ```
 
 ![Guest Access Blocked](Screenshot/06_Guest_Blocked.png)
+
 *Figure 6: Command prompt on Guest-Laptop confirming that all network traffic to internal subnets is blocked by rule 30 of GUEST_SECURITY_ACL.*
 
 ---
@@ -283,6 +288,7 @@ Extended IP access list CORP_USERS_SECURITY_ACL
 ```
 
 ![Router ACL Match Counters](Screenshot/07_Router_ACL_Match_Counters.png)
+
 *Figure 7: Real-time match telemetry confirming active policy enforcement: 4 packets matched and dropped under GUEST_SECURITY_ACL rule 30, with ordered sequence numbers (10 to 70) on CORP_USERS_SECURITY_ACL.*
 
 ---
