@@ -161,6 +161,7 @@ All tests below were executed and captured directly from the live Cisco Packet T
 
 ### Test 1: Complete Network Topology Overview
 ![Packet Tracer Topology](Screenshot/01_Packet_Tracer_Topology.png)
+
 *Figure 1: Cisco Packet Tracer workspace displaying core router (R1-CoreRouter), distribution switch (SW1-Distribution), and all 4 VLAN endpoint zones.*
 
 ---
